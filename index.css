@@ -1,0 +1,169 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: radial-gradient(circle at top left, #0a4e8e 10%, #103272 20%, #050734 80% ,#02011b 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+
+.outer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 70vw;
+    border: 0;
+    box-shadow: 0.1px 0.1px 26px black;
+    border-radius: 2rem;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 15%;
+}
+
+.left_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.right_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-radius: 0rem 2rem 2rem 0rem;
+}
+
+.player_info{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.current_status{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_number{
+    font-size: 3.5rem;
+}
+
+.high_score{
+    font-size: 3.5rem;
+}
+
+.box{
+    height: 10rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.text{
+    font-size: 2.75rem;
+}
+
+.current_score{
+    font-size: 2.75rem;
+}
+
+button{
+    background: rgba(41, 128, 190, 0.829);
+    border: 0;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:active{
+    scale: 0.95;    
+    transition: 0.3s;
+}
+
+img{
+    height: 8rem;
+    border-radius: 16px;
+}
+
+.active{
+    background: linear-gradient(to top left, rgb(47, 112, 153) 10%, rgb(25, 97, 148) 90%);
+}
+
+.hidden{
+    display: none;
+}
+
+.hidden.popup{
+    display: none;
+}
+
+.popup{
+    position: absolute;
+    height: 20rem;
+    width: 30rem;
+    border-radius: 16px;
+    box-shadow: 0.1px 0.1px 16px 1px black;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top left, rgb(47, 112, 153) 10%, rgb(25, 97, 148) 90%);
+    font-size: 5rem;
+    gap: 5rem;
+    z-index: 3;
+}
+
+.popup > #btn{
+    font-size: 2rem;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.8;
+    z-index: 2;
+}
